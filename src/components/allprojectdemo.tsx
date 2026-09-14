@@ -6,6 +6,30 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
   {
+    id: 10,
+    title: "AI Detection Teks",
+    category: "Machine Learning",
+    period: "2024 – 2025",
+    image: "/aidetection.png",
+    shortDesc: "AI-powered text detection with fusion multi-feature analysis",
+    fullDesc: "Web-based AI text detection tool that combines multiple analysis features including Stilometri, Perplexity, TF-IDF, and IndoBERT to determine whether a text is written by AI or a human. Achieves 96% accuracy using fusion multi-feature approach for comprehensive text analysis.",
+    tech: ["Python", "IndoBERT", "Scikit-Learn", "NLP", "TF-IDF", "Flask"],
+    github: "https://github.com/parisafauzan/Ai-Detection-Teks-with-Fusion-multi-Feature-.git",
+    demo: null,
+  },
+  {
+    id: 11,
+    title: "AlifBaBa",
+    category: "Web Development",
+    period: "2025",
+    image: "/alifbaba.png",
+    shortDesc: "Interactive Islamic learning platform for children",
+    fullDesc: "An engaging educational web platform designed to make Islamic learning fun for children. Features include Hijaiyah letter learning with audio, inspirational stories of prophets with animations, and daily Hadith memorization. Built with a modern, child-friendly UI with gamification elements.",
+    tech: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Web App"],
+    github: "https://github.com/parisafauzan/Alifbaba.git",
+    demo: null,
+  },
+  {
     id: 5,
     title: "Food E-commerce Platform",
     category: "Web Development",

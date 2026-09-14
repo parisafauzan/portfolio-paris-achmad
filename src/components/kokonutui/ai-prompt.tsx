@@ -83,23 +83,21 @@ export default function ContactMe() {
             const platform = CONTACT_PLATFORMS.find(p => p.name === selectedPlatform);
             
             if (selectedPlatform === "Email") {
-                // Send email using Web3Forms or EmailJS
-                const response = await fetch("https://api.web3forms.com/submit", {
+                const response = await fetch("/api/contact", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
                     },
                     body: JSON.stringify({
-                        access_key: "YOUR_WEB3FORMS_ACCESS_KEY", // Ganti dengan access key Anda
-                        subject: subject || "New Contact from Portfolio",
                         name: name,
-                        email: "noreply@portfolio.com",
-                        message: `From: ${name}\nSubject: ${subject}\n\n${message}`,
-                        to: "parisafauzan@gmail.com",
+                        subject: subject || "New Contact from Portfolio",
+                        message: message,
                     }),
                 });
 
-                if (response.ok) {
+                const data = await response.json();
+
+                if (response.ok && data.success) {
                     setSendSuccess(true);
                     setTimeout(() => {
                         setName("");
@@ -108,6 +106,9 @@ export default function ContactMe() {
                         setSendSuccess(false);
                         adjustHeight(true);
                     }, 2000);
+                } else {
+                    console.error("Failed to send:", data.error);
+                    alert("Failed to send message. Please try again or use another platform.");
                 }
             } else if (selectedPlatform === "Instagram") {
                 // Open Instagram DM
@@ -121,6 +122,7 @@ export default function ContactMe() {
             }
         } catch (error) {
             console.error("Error sending message:", error);
+            alert("Failed to send message. Please check your connection and try again.");
         } finally {
             setIsSending(false);
         }

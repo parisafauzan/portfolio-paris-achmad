@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "motion/react";
 import React, { useRef } from "react";
 import dynamic from "next/dynamic";
 import BackgroundParticles from "../components/background";
-import { ChevronDown } from "lucide-react";
 import AttractButton from "../components/kokonutui/attract-button";
 import DownloadButton from "../components/downloadbuton";
 import Datadiri from "@/components/datadiri";
@@ -16,21 +15,12 @@ import FaqsAccordion from "../components/FAQ";
 import AI_Prompts from "../components/kokonutui/ai-prompt";
 import Navbar from "../components/kokonutui/Navbar"; // Import Navbar baru
 import Footer from "../components/footer"; // Import Footer baru
+import { HeroSection } from "../components/herosection/hero-section";
 
 const Toolsloop = dynamic(() => import("../components/Logo"), { ssr: false });
-import Spline from "@splinetool/react-spline";
-
-// Lalu wrap dengan dynamic di component
-const SplineComponent = dynamic(
-  () => Promise.resolve(Spline),
-  { ssr: false }
-);
 
 export default function ClientHome() {
   const aboutRef = useRef<HTMLDivElement>(null);
-  const handleScroll = () => {
-    aboutRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <div className="relative w-full min-h-screen text-white">
@@ -43,31 +33,7 @@ export default function ClientHome() {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section id="home" className="relative w-full h-screen overflow-hidden">
-        {/* Spline Scene */}
-        <div className="absolute inset-0 z-0">
-          <Spline scene="https://prod.spline.design/lpBtYgg1V0gT7PeO/scene.splinecode" />
-        </div>
-
-        {/* Overlay text */}
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-4 pointer-events-none">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Hi, Welcome to my portfolio
-          </h1>
-          <p className="text-lg mb-6">Please scroll for more</p>
-
-          <button
-            onClick={handleScroll}
-            className="pointer-events-auto mt-6 p-3 rounded-full bg-white/10 hover:bg-white/20 transition"
-            aria-label="scroll down"
-          >
-            <ChevronDown size={24} />
-          </button>
-          <div className="absolute bottom-4 right-4 w-50 h-10 bg-[#0a0a0a] rounded-md  z-20">
-            <h1 className='text-[#0a0a0a]'>asdasdadadwaswasd</h1>
-          </div>
-        </div>
-      </section>
+      <HeroSection />
 
       {/* ABOUT SECTION */}
       <section

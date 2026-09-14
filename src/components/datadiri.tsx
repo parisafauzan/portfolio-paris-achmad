@@ -85,6 +85,12 @@ export default function Datadiri() {
             {/* Pengalaman */}
             <div className="mt-6 flex flex-col gap-4">
               <div className="bg-neutral-900 p-4 rounded-lg flex justify-between items-center">
+                <span className="font-medium">Web Developer</span>
+                <span className="text-sm text-neutral-400">
+                  PT Graha Sarana Duta — Oct 2025 – Feb 2026
+                </span>
+              </div>
+              <div className="bg-neutral-900 p-4 rounded-lg flex justify-between items-center">
                 <span className="font-medium">Videografer & Fotografer</span>
                 <span className="text-sm text-neutral-400">
                   Fine.Potret — Aug 2022 – Present
