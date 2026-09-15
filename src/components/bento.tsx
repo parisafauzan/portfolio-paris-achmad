@@ -51,12 +51,14 @@ export default function AIAgentsCard() {
     skills: [
       "React.js ⚛️",
       "Next.js ▲",
+      "n8n Workflow Automation ⚡",
+      "AI Automation & LLMs 🤖",
       "TailwindCSS 🎨",
-      "MySQL 🗄️",
-      "AI & Data Science 🤖"
+      "MySQL 🗄️"
     ],
     interests: [
       "Web Development 💻",
+      "AI Automation & Autonomous Agents ⚡",
       "Artificial Intelligence 🧠",
       "UI/UX Engineering 🎨"
     ],

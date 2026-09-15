@@ -22,14 +22,19 @@ export default function FaqsAccordion({
       "Salah satu project terbesar saya adalah Aquadex, sebuah sistem IoT untuk pemantauan kualitas air akuarium secara real-time. Project ini melibatkan sensor, MQTT, database cloud, dan integrasi mobile & web untuk monitoring.",
   },
   {
+    question: "Bagaimana pengalamanmu dalam AI Automation & n8n?",
+    answer:
+      "Saya berpengalaman merancang workflow automation menggunakan n8n yang terintegrasi dengan berbagai API, webhook, dan model AI/LLM. Automasi ini mencakup integrasi data otomatis, bot asisten cerdas, sinkronisasi database, hingga optimasi alur kerja proses bisnis secara efisien.",
+  },
+  {
     question: "Apakah kamu punya pengalaman di bidang Machine Learning?",
     answer:
       "Ya, saya pernah mengerjakan beberapa project Machine Learning, termasuk PKLot Detection menggunakan YOLO untuk deteksi parkir, DocRank untuk pencarian teks dengan NLP, dan klasifikasi penyakit tanaman menggunakan CNN.",
   },
   {
-    question: "Skill programming language apa yang paling sering kamu gunakan?",
+    question: "Skill & tools apa yang paling sering kamu gunakan?",
     answer:
-      "Saya terbiasa menggunakan Python (Data Science, Machine Learning), JavaScript/TypeScript (React.js, Next.js), SQL untuk database, serta Flutter untuk mobile development.",
+      "Saya terbiasa menggunakan JavaScript/TypeScript (React.js, Next.js), Python (Data Science, ML), n8n & AI Tools untuk automation, SQL untuk database, serta Flutter untuk mobile development.",
   },
   {
     question: "Pernahkah kamu mengembangkan aplikasi mobile?",

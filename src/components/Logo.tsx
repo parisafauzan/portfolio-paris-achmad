@@ -10,12 +10,16 @@ import {
   SiFlutter, 
   SiMysql, 
   SiPostgresql, 
-  SiGit 
+  SiGit,
+  SiN8N,
+  SiOpenai
 } from 'react-icons/si';
 
 const techLogos = [
   { node: <SiReact />, title: "React", href: "https://react.dev" },
   { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
+  { node: <SiN8N />, title: "n8n", href: "https://n8n.io" },
+  { node: <SiOpenai />, title: "AI Automation", href: "https://openai.com" },
   { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
   { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
   { node: <SiPython />, title: "Python", href: "https://www.python.org" },

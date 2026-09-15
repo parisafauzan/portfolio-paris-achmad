@@ -29,7 +29,7 @@ export default function Datadiri() {
               </span>
               <h3 className="text-2xl font-bold">Paris Achmad Fauzan</h3>
               <p className="text-neutral-400 text-sm mb-6">
-                Full-Stack & AI Developer
+                Full-Stack & AI Automation Developer
               </p>
 
               {/* Contact Button */}
@@ -53,6 +53,8 @@ export default function Datadiri() {
             {/* Tools */}
             <div className="flex flex-wrap gap-3">
               {[
+                "n8n",
+                "AI Automation",
                 "JavaScript",
                 "Python",
                 "TypeScript",

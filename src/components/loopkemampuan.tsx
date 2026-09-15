@@ -14,6 +14,8 @@ import {
   SiFlutter,
   SiTensorflow,
   SiArduino,
+  SiN8N,
+  SiOpenai,
 } from "react-icons/si";
 import { GiArtificialIntelligence } from "react-icons/gi";
 
@@ -22,6 +24,7 @@ import { JSX } from "react/jsx-dev-runtime";
 // Baris atas
 const skillsTop = [
   { icon: <FaReact />, label: "Web Development (React, Next.js)" },
+  { icon: <SiN8N />, label: "Workflow Automation (n8n)" },
   { icon: <SiFlutter />, label: "Mobile Development (Flutter)" },
   { icon: <FaDatabase />, label: "Database & SQL" },
   { icon: <FaPython />, label: "Python (ML & Data Analysis)" },
@@ -29,8 +32,9 @@ const skillsTop = [
 
 // Baris bawah
 const skillsBottom = [
+  { icon: <SiOpenai />, label: "AI Automation & LLMs" },
   { icon: <SiTensorflow />, label: "Machine Learning & CV" },
-  { icon: <GiArtificialIntelligence />, label: "AI Engineering" },
+  { icon: <GiArtificialIntelligence />, label: "AI Engineering & Agents" },
   { icon: <SiArduino />, label: "IoT & Embedded Systems" },
   { icon: <FaCloud />, label: "Cloud Computing" },
 ];

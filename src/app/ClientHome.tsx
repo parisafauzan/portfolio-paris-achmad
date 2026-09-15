@@ -46,8 +46,7 @@ export default function ClientHome() {
             I'm Paris Achmad Fauzan
           </h2>
           <p className="text-lg md:text-xl leading-relaxed mb-8">
-            A passionate Full-Stack Developer and AI enthusiast with  innovative IT solutions. With expertise in  web
-            technologies and a deep understanding of AI.
+            A passionate Full-Stack Developer & AI Automation enthusiast building innovative IT solutions. With expertise in modern web technologies, workflow automation with n8n, and intelligent AI integrations.
           </p>
 
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center">

@@ -80,7 +80,7 @@ export function HeroSection() {
         >
           <span className="inline-flex items-center gap-3 text-sm font-mono text-neutral-400">
             <span className="w-8 h-px bg-gradient-to-r from-cyan-500 to-blue-500" />
-            Full-Stack Developer & AI Enthusiast
+            Full-Stack Developer, AI & Automation Enthusiast
           </span>
         </div>
         
@@ -124,8 +124,8 @@ export function HeroSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Crafting modern web experiences with cutting-edge 
-            technologies. From sleek interfaces to powerful backends.
+            Crafting modern web experiences & AI automation workflows with cutting-edge 
+            technologies. From smart n8n automations to powerful full-stack backends.
           </p>
           
           {/* CTAs */}
