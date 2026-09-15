@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="pGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background rounded squircle -->
+  <rect x="2" y="2" width="96" height="96" rx="28" fill="url(#bgGrad)" stroke="url(#pGrad)" stroke-width="3.5"/>
+  
+  <!-- Stylized Modern 'P' with AI node dot -->
+  <path d="M 33 24 L 54 24 C 66 24 74 32 74 43 C 74 54 66 62 54 62 L 46 62 L 46 76 L 33 76 Z M 46 36 L 46 50 L 53 50 C 58 50 61 47 61 43 C 61 39 58 36 53 36 Z" fill="url(#pGrad)"/>
+  <circle cx="70" cy="27" r="4.5" fill="#06B6D4" />
+</svg>
